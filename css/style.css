@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Arvo";
+}
+
+@font-face {
+  font-family: "Tilt Prism";
+  src: url(/fonts/TiltPrism/TiltPrism-Regular-VariableFont_XROT\,YROT.ttf);
+}
+@font-face {
+  font-family: "Noto Sans";
+  src: url(/fonts/NonoSans/NotoSans-Regular.ttf);
+}
+@font-face {
+  font-family: "PressStart2P";
+  src: url(/fonts/PressStart2p/PressStart2P-Regular.ttf);
+}
+@font-face {
+  font-family: "Raleway";
+  src: url(/fonts/Raleway/Raleway-Medium.ttf);
+}
+@font-face {
+  font-family: "Arvo";
+  src: url(/fonts/Arvo/Arvo-Regular.ttf);
+}
+@font-face {
+  font-family: "Dosis";
+  src: url(/fonts/Dosis/static/Dosis-Medium.ttf);
+}
+body {
+  max-width: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */

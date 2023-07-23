@@ -1,0 +1,235 @@
+@import "reset";
+
+@font-face {
+    font-family: 'Tilt Prism';
+    src: url(/fonts/TiltPrism/TiltPrism-Regular-VariableFont_XROT\,YROT.ttf);
+}
+
+@font-face {
+    font-family: 'Noto Sans';
+    src: url(/fonts/NonoSans/NotoSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'PressStart2P';
+    src: url(/fonts/PressStart2p/PressStart2P-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url(/fonts/Raleway/Raleway-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'Arvo';
+    src: url(/fonts/Arvo/Arvo-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Dosis';
+    src: url(/fonts/Dosis/static/Dosis-Medium.ttf);
+}
+
+body {
+    max-width: 100%;
+}
+
+.cabecera {
+    position: relative;
+    width: 100%;
+    background-image: url(..//media/Media-Index/keycaps\ white.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    h1 {
+        position: static;
+        color: white;
+        font-family: 'Dosis';
+        text-align: center;
+        font-size: 60pt;
+        padding: 5%;
+        text-shadow: 4px 4px darkred, -4px -4px black;
+    }
+}
+
+.navbar {
+    position: sticky;
+    z-index: 100;
+    font-family: 'Arvo';
+
+    ul {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 15px;
+
+        .nav-item {
+            padding: 5px;
+            margin: 5px;
+            list-style: none;
+            background-color: rgba(5, 5, 5, 0.7);
+            padding: 5px;
+            border-radius: 10px;
+        }
+
+        .nav-item:hover {
+            font-weight: bolder;
+            transition: all 0.3s ease-in-out;
+        }
+    }
+
+    a {
+        color: white;
+    }
+
+}
+
+#checkbox-menu,
+label.menu {
+    display: none;
+}
+
+label.menu {
+    color: white;
+    cursor: pointer;
+    padding-left: 1%;
+}
+
+.background {
+    background-color: rgba(128, 128, 128, 0.5);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    max-width: 100%;
+    font-family: 'Arvo';
+    text-transform: uppercase;
+    color: black;
+    padding: 10px;
+    gap: 10px;
+
+    .grid-container {
+        text-align: center;
+        align-items: baseline;
+        justify-content: baseline;
+
+        p {
+            font-size: smaller;
+            font-weight: bold;
+            color: rgba(0, 0, 0, 0.5);
+            border: 2pt solid;
+            border-radius: 20pt;
+        }
+
+        p:hover {
+            color: white;
+            transition: all 0.5s ease-in-out;
+            cursor: pointer;
+        }
+    }
+
+    .img {
+        max-width: 80%;
+        height: auto;
+    }
+}
+
+h2 {
+    text-align: center;
+    font-size: 30pt;
+    padding: 2%;
+    font-family: 'Dosis';
+    color: white;
+    text-shadow: 2px 1px 3px black;
+}
+
+h4 {
+    text-align: center;
+    font-family: 'Dosis';
+    color: rgba(0, 0, 0, 0.5);
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-size: larger;
+    padding-bottom: 2%;
+}
+
+h4:hover {
+    color: white;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.piedepag {
+    background-image: url(../media/Media-Index/keycaps\ white.jpg);
+    margin: 0;
+    width: cover;
+    padding: 3% 0%;
+    color: white;
+    text-align: center;
+
+    p {
+        font-family: 'Dosis';
+        font-weight: bold;
+        text-transform: uppercase;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 3%;
+        color: white;
+    }
+}
+
+a {
+    text-decoration-line: none;
+    text-decoration-color: black;
+    font-size: 20px;
+    font-family: 'Noto Sans';
+}
+
+// Estilos para la pagina de contacto
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.form-title {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-weight: bold;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contact-title {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+@import "queries";

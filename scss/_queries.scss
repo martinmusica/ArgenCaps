@@ -1,0 +1,74 @@
+@media screen and (max-width: 768px){
+    .navbar{
+        ul{
+            display: none;
+        flex-direction: column;
+        position: absolute;
+        }
+    }
+    label.menu {
+        display: flex;
+        color: white;
+        font-size: 1.5rem;
+    }
+    #checkbox-menu:checked~ul {
+        display: block;
+    }
+    .grid {
+        grid-template-columns: 1fr;
+        padding: 5%;
+    }
+    .cabecera{
+        a{
+            h1{
+                font-size: 40pt;
+            }
+        }
+    }
+    .container {
+        padding: 10px;
+    }
+    .form-title, .contact-title {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .form-control, .btn-primary {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 360px){
+    .navbar{
+        ul{
+            display: none;
+            flex-direction: column;
+            position: absolute;
+        }
+    }
+    label.menu {
+        display: flex;
+        color: white;
+        font-size: 1.5rem;
+    }
+    #checkbox-menu:checked~ul {
+        display: block;
+    }
+    .grid {
+        grid-template-columns: 1fr;
+        padding: 5%;
+    }
+    .cabecera{
+        a{
+            h1{
+                font-size: 24pt; 
+            }
+        }
+    }
+    .container {
+        padding: 5px;
+    }
+    .form-title, .contact-title {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+}
