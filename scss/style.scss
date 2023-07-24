@@ -1,3 +1,7 @@
+$Paddingnormal: 15px;
+$Font-H1: 60pt;
+$Font-color: white;
+
 @import "reset";
 
 @font-face {
@@ -34,6 +38,7 @@ body {
     max-width: 100%;
 }
 
+// Header. Con su respectiva img de fondo.
 .cabecera {
     position: relative;
     width: 100%;
@@ -42,28 +47,32 @@ body {
     background-position: center;
     background-repeat: no-repeat;
 
+    // Texto dentro del header
     h1 {
         position: static;
-        color: white;
+        color: $Font-color;
         font-family: 'Dosis';
         text-align: center;
-        font-size: 60pt;
+        font-size: $Font-H1;
         padding: 5%;
         text-shadow: 4px 4px darkred, -4px -4px black;
     }
 }
 
+// Barra de navegación 
 .navbar {
     position: sticky;
     z-index: 100;
     font-family: 'Arvo';
 
+    // Contenido dedicado a la lista dentro de la barra de navegación
     ul {
         display: flex;
         justify-content: space-evenly;
         align-items: center;
-        padding: 15px;
+        padding: $Paddingnormal/ 2;
 
+        // Estilos dedicados para los items de la lista, como tambien sus animaciones.
         .nav-item {
             padding: 5px;
             margin: 5px;
@@ -74,32 +83,41 @@ body {
         }
 
         .nav-item:hover {
+            background-color: rgba(255, 255, 255, 0.9);
             font-weight: bolder;
-            transition: all 0.3s ease-in-out;
+            transition: all 0.5s ease-in-out;
         }
     }
 
+    // Estilos dedicados a las etiquetas a dentro de la barra de navegación!
     a {
-        color: white;
+        color: $Font-color;
+    }
+
+    a:hover {
+        color: rgba(0, 0, 0, 0.8)
     }
 
 }
 
+// Menú hamburguesa!
 #checkbox-menu,
 label.menu {
     display: none;
 }
 
 label.menu {
-    color: white;
+    color: $Font-color;
     cursor: pointer;
     padding-left: 1%;
 }
 
+// Fondo de las paginas. Exceptuando la pagina de contacto!
 .background {
     background-color: rgba(128, 128, 128, 0.5);
 }
 
+// Estilos para la grilla, imagenes y contenido de los contenedores.
 .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -111,6 +129,7 @@ label.menu {
     padding: 10px;
     gap: 10px;
 
+    // Estilos dedicados exclusivamente para los contenedores
     .grid-container {
         text-align: center;
         align-items: baseline;
@@ -125,7 +144,7 @@ label.menu {
         }
 
         p:hover {
-            color: white;
+            color: $Font-color;
             transition: all 0.5s ease-in-out;
             cursor: pointer;
         }
@@ -137,12 +156,13 @@ label.menu {
     }
 }
 
+// Estilos para los Subtitulos que estan antes y despues de las imagenes de muestra!
 h2 {
     text-align: center;
-    font-size: 30pt;
+    font-size: $Font-H1/ 2;
     padding: 2%;
     font-family: 'Dosis';
-    color: white;
+    color: $Font-color;
     text-shadow: 2px 1px 3px black;
 }
 
@@ -152,7 +172,7 @@ h4 {
     color: rgba(0, 0, 0, 0.5);
     text-decoration: underline;
     text-transform: uppercase;
-    font-size: larger;
+    font-size: $Font-H1 / 3;
     padding-bottom: 2%;
 }
 
@@ -162,12 +182,13 @@ h4:hover {
     cursor: pointer;
 }
 
+// Estilos para el Footer!
 .piedepag {
     background-image: url(../media/Media-Index/keycaps\ white.jpg);
     margin: 0;
     width: cover;
     padding: 3% 0%;
-    color: white;
+    color: $Font-color;
     text-align: center;
 
     p {
@@ -176,7 +197,7 @@ h4:hover {
         text-transform: uppercase;
         background-color: rgba(0, 0, 0, 0.5);
         padding: 3%;
-        color: white;
+        color: $Font-color;
     }
 }
 
@@ -187,7 +208,7 @@ a {
     font-family: 'Noto Sans';
 }
 
-// Estilos para la pagina de contacto
+// Estilos para la pagina de contacto!
 
 .container {
     max-width: 960px;
@@ -215,7 +236,7 @@ a {
 
 .btn-primary {
     background-color: #007bff;
-    color: #fff;
+    color: white;
     padding: 10px 20px;
     border: none;
     border-radius: 4px;
